@@ -1,5 +1,3 @@
-
-
 plugins {
     id("java")
     id("jacoco")
@@ -9,6 +7,11 @@ plugins {
 java {
     sourceCompatibility = JavaVersion.VERSION_11
     targetCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
 }
 
 version = "1.2.1"
